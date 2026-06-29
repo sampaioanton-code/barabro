@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bar à Bro — Bar à Bières &amp; Vins | Craponne (69290)</title>
+  <meta name="description" content="Bar de quartier cosy à Craponne. Bières pression &amp; bouteilles, sélection de vins, planches charcuterie &amp; fromages. Ambiance chaleureuse et décontractée. Note 4,8/5 ☎ 07 49 55 84 50">
+  <meta name="keywords" content="bar Craponne, bar à bières Craponne, planche charcuterie Craponne, bar after-work ouest lyonnais, bar cosy Craponne, bar à vins Craponne 69290">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="FR-69">
+  <meta name="geo.placename" content="Craponne">
+  <meta name="geo.position" content="45.7508;4.7228">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Bar à Bro — Bar cosy à Bières &amp; Vins, Craponne">
+  <meta property="og:description" content="Bar de quartier cosy à Craponne. Bières, vins, planches charcuterie. Ambiance décontractée. Note 4,8/5 sur Google.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Schema.org BarOrPub -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["BarOrPub", "LocalBusiness"],
+    "name": "Bar à Bro",
+    "description": "Bar de quartier cosy à Craponne. Bières pression et bouteilles, sélection de vins, planches charcuterie et fromages. Ambiance chaleureuse et décontractée.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "68 Avenue Édouard Millaud",
+      "addressLocality": "Craponne",
+      "postalCode": "69290",
+      "addressCountry": "FR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 45.7508, "longitude": 4.7228 },
+    "telephone": "+33749558450",
+    "email": "hugo@barabro.fr",
+    "priceRange": "€€",
+    "foundingDate": "2021",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday",   "opens": "17:00", "closes": "00:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "17:00", "closes": "00:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday",  "opens": "17:00", "closes": "00:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday",    "opens": "17:00", "closes": "01:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday",  "opens": "17:00", "closes": "01:00" }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "bestRating": "5",
+      "ratingCount": "172"
+    },
+    "founder": { "@type": "Person", "name": "Hugo Forly" }
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ── RESET & VARIABLES ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      /* Palette cosy : noir · or mat · vert plante */
+      --noir:    #07090A;
+      --dark:    #0D1009;
+      --sombre:  #141A10;
+      --sombre2: #1B2215;
+
+      --or:      #B89A48;
+      --or-cl:   #CAAD62;
+      --or-pale: #D9C07A;
+
+      --vert:    #3D5C32;
+      --vert-cl: #537445;
+      --vert-dk: #253A1C;
+      --vert-xs: rgba(61,92,50,.12);
+
+      --creme:   #EDE8D5;
+      --creme2:  #F5F1E4;
+      --gris:    #666B5C;
+      --gris-cl: #A2A895;
+      --blanc:   #F7F4E9;
+
+      --display: 'Bebas Neue', sans-serif;
+      --serif:   'Cormorant Garamond', Georgia, serif;
+      --sans:    'Inter', system-ui, sans-serif;
+
+      --shadow-sm: 0 2px 12px rgba(0,0,0,.4);
+      --shadow-md: 0 6px 28px rgba(0,0,0,.5);
+      --shadow-lg: 0 14px 52px rgba(0,0,0,.6);
+
+      --radius:    5px;
+      --radius-lg: 12px;
+      --ease:      0.3s ease;
+    }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--sans);
+      background: var(--dark);
+      color: var(--creme);
+      line-height: 1.68;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a   { text-decoration: none; color: inherit; }
+    ul  { list-style: none; }
+
+    /* ── TYPOGRAPHIE ── */
+    .label {
+      display: block;
+      font-family: var(--sans);
+      font-size: .68rem; font-weight: 600;
+      letter-spacing: .28em; text-transform: uppercase;
+      color: var(--vert-cl); margin-bottom: .6rem;
+    }
+    .title {
+      font-family: var(--serif);
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 600; line-height: 1.08;
+      color: var(--blanc);
+    }
+    .title em { font-style: italic; color: var(--or); }
+
+    .divider {
+      display: flex; align-items: center; gap: 1rem;
+      margin: 1.4rem 0 2rem;
+    }
+    .divider::before, .divider::after {
+      content: ''; flex: 1; height: 1px;
+      background: rgba(184,154,72,.18);
+    }
+    .divider span { color: var(--vert-cl); font-size: .8rem; }
+
+    /* ── LAYOUT ── */
+    .container { width: 100%; max-width: 1160px; margin: 0 auto; padding: 0 1.5rem; }
+    section { padding: 5.5rem 0; }
+
+    /* ── BOUTONS ── */
+    .btn {
+      display: inline-flex; align-items: center; gap: .5rem;
+      padding: .85rem 1.8rem;
+      font-family: var(--sans);
+      font-size: .78rem; font-weight: 600;
+      letter-spacing: .1em; text-transform: uppercase;
+      border-radius: var(--radius);
+      border: 1.5px solid transparent;
+      cursor: pointer; transition: all var(--ease);
+      white-space: nowrap;
+    }
+    .btn-vert {
+      background: var(--vert); color: var(--creme2);
+      border-color: var(--vert);
+    }
+    .btn-vert:hover {
+      background: var(--vert-cl); border-color: var(--vert-cl);
+      transform: translateY(-2px); box-shadow: 0 6px 20px rgba(61,92,50,.35);
+    }
+    .btn-outline {
+      background: transparent; color: var(--creme);
+      border-color: rgba(237,232,213,.3);
+    }
+    .btn-outline:hover { border-color: var(--or-cl); color: var(--or-cl); transform: translateY(-2px); }
+    .btn-or {
+      background: var(--or); color: var(--noir);
+      border-color: var(--or);
+    }
+    .btn-or:hover { background: var(--or-cl); border-color: var(--or-cl); transform: translateY(-2px); }
+
+    /* ── COOKIE BANNER ── */
+    .cookie-banner {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      z-index: 2000;
+      background: rgba(7,9,10,.97);
+      border-top: 1px solid rgba(184,154,72,.15);
+      padding: 1rem 1.5rem;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1.5rem; flex-wrap: wrap;
+      backdrop-filter: blur(14px);
+    }
+    .cookie-banner p { font-size: .8rem; color: var(--gris-cl); flex: 1; min-width: 200px; }
+    .cookie-banner a { color: var(--or); }
+    .cookie-btns { display: flex; gap: .6rem; flex-shrink: 0; }
+    .cookie-accept {
+      background: var(--vert); color: var(--creme2);
+      border: none; padding: .48rem 1.2rem;
+      border-radius: var(--radius); font-size: .78rem; font-weight: 600;
+      cursor: pointer; font-family: var(--sans); transition: background var(--ease);
+    }
+    .cookie-accept:hover { background: var(--vert-cl); }
+    .cookie-decline {
+      background: transparent; color: var(--gris);
+      border: 1px solid rgba(102,107,92,.45); padding: .48rem 1rem;
+      border-radius: var(--radius); font-size: .78rem;
+      cursor: pointer; font-family: var(--sans); transition: all var(--ease);
+    }
+    .cookie-decline:hover { color: var(--creme); border-color: rgba(237,232,213,.4); }
+
+    /* ── NAVIGATION ── */
+    .nav {
+      position: fixed; inset: 0 0 auto;
+      z-index: 1000; padding: 1.1rem 0;
+      transition: all var(--ease);
+    }
+    .nav.scrolled {
+      background: rgba(7,9,10,.96);
+      backdrop-filter: blur(18px);
+      padding: .6rem 0;
+      box-shadow: 0 2px 24px rgba(0,0,0,.55);
+      border-bottom: 1px solid rgba(61,92,50,.2);
+    }
+    .nav .container { display: flex; align-items: center; justify-content: space-between; }
+
+    .nav-logo { display: flex; flex-direction: column; line-height: 1; }
+    .nav-logo .nm {
+      font-family: var(--display);
+      font-size: 1.55rem; letter-spacing: .1em;
+      color: var(--or-cl); line-height: 1;
+    }
+    .nav-logo .sub {
+      font-size: .58rem; font-weight: 500;
+      letter-spacing: .24em; text-transform: uppercase;
+      color: var(--gris-cl);
+    }
+
+    .nav-links { display: flex; align-items: center; gap: 2.2rem; }
+    .nav-links a {
+      font-size: .76rem; font-weight: 500;
+      letter-spacing: .12em; text-transform: uppercase;
+      color: rgba(237,232,213,.65);
+      position: relative; transition: color var(--ease);
+    }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: -4px; left: 0;
+      width: 0; height: 1px; background: var(--vert-cl);
+      transition: width var(--ease);
+    }
+    .nav-links a:hover { color: var(--creme); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-links .nav-call {
+      background: var(--vert); color: var(--creme2) !important;
+      padding: .42rem 1rem; border-radius: var(--radius); font-weight: 600;
+    }
+    .nav-links .nav-call::after { display: none; }
+    .nav-links .nav-call:hover { background: var(--vert-cl) !important; }
+
+    .nav-burger {
+      display: none; flex-direction: column; gap: 5px;
+      cursor: pointer; padding: 4px; z-index: 1010;
+    }
+    .nav-burger span {
+      display: block; width: 24px; height: 2px;
+      background: var(--creme); border-radius: 2px; transition: all var(--ease);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative; min-height: 100vh;
+      display: flex; align-items: center;
+      padding: 0; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(to right, rgba(7,9,10,.88) 40%, rgba(7,9,10,.48) 100%),
+        url('bro-photo-3.png') center/cover no-repeat;
+    }
+    .hero-tint {
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 18% 72%, rgba(61,92,50,.15) 0%, transparent 58%);
+      pointer-events: none;
+    }
+
+    .hero-content { position: relative; z-index: 2; max-width: 680px; }
+
+    .hero-pill {
+      display: inline-flex; align-items: center; gap: .45rem;
+      background: rgba(61,92,50,.18); border: 1px solid rgba(83,116,69,.3);
+      color: var(--vert-cl); font-size: .68rem; font-weight: 600;
+      letter-spacing: .2em; text-transform: uppercase;
+      padding: .36rem .95rem; border-radius: 50px; margin-bottom: 1.5rem;
+    }
+
+    .hero-title {
+      font-family: var(--display);
+      font-size: clamp(4.5rem, 12vw, 9.5rem);
+      line-height: .9; letter-spacing: .04em;
+      color: var(--blanc); margin-bottom: .9rem;
+    }
+    .hero-title .line2 { color: var(--or); display: block; }
+
+    .hero-tagline {
+      font-family: var(--serif);
+      font-size: clamp(1.05rem, 2vw, 1.35rem);
+      font-weight: 400; font-style: italic;
+      color: rgba(237,232,213,.68);
+      margin-bottom: 2.5rem; line-height: 1.6;
+    }
+
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 3.5rem; }
+
+    .hero-stats {
+      display: flex; gap: 2.8rem;
+      padding-top: 2.2rem;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+    .hero-stat strong {
+      display: block; font-family: var(--display);
+      font-size: 2rem; letter-spacing: .05em;
+      color: var(--or-cl); line-height: 1;
+    }
+    .hero-stat span {
+      font-size: .68rem; color: rgba(237,232,213,.45);
+      letter-spacing: .08em; margin-top: .15rem;
+    }
+
+    .hero-scroll {
+      position: absolute; bottom: 2rem; left: 50%;
+      transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: .4rem;
+      color: rgba(237,232,213,.3); font-size: .6rem;
+      letter-spacing: .2em; text-transform: uppercase;
+      animation: bob 2.8s ease infinite;
+    }
+    .hero-scroll-line {
+      width: 1px; height: 38px;
+      background: linear-gradient(to bottom, rgba(83,116,69,.6), transparent);
+    }
+    @keyframes bob {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50%       { transform: translateX(-50%) translateY(7px); }
+    }
+
+    /* ── QUOTE STRIP ── */
+    .quote-strip {
+      background: var(--noir);
+      border-top: 1px solid rgba(61,92,50,.18);
+      border-bottom: 1px solid rgba(61,92,50,.12);
+      padding: 2rem 0;
+    }
+    .quote-strip-inner {
+      display: flex; gap: 3rem; align-items: center;
+      justify-content: center; flex-wrap: wrap;
+    }
+    .quote-item {
+      display: flex; align-items: center; gap: .65rem;
+      font-family: var(--serif);
+      font-size: 1.05rem; font-weight: 400; font-style: italic;
+      color: rgba(237,232,213,.55);
+    }
+    .quote-item::before { content: '★'; color: var(--or); font-style: normal; font-size: .78rem; flex-shrink: 0; }
+
+    /* ── L'ESPRIT BRO ── */
+    .esprit { background: var(--sombre); }
+
+    .esprit-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 5.5rem; align-items: center;
+    }
+
+    .esprit-img-wrap { position: relative; }
+    .esprit-img-main {
+      width: 100%; height: auto;
+      object-fit: contain;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      background: var(--sombre);
+    }
+    .esprit-img-secondary {
+      position: absolute; bottom: -2rem; right: -2rem;
+      width: 46%; height: auto;
+      object-fit: contain;
+      border-radius: var(--radius-lg);
+      border: 3px solid var(--sombre);
+      box-shadow: var(--shadow-lg);
+      background: var(--sombre);
+    }
+    .esprit-badge {
+      position: absolute; top: 1.5rem; left: -1.5rem;
+      background: var(--vert-dk);
+      border: 1px solid rgba(83,116,69,.35);
+      color: var(--or-cl);
+      padding: 1.1rem 1.3rem;
+      border-radius: var(--radius-lg);
+      text-align: center; box-shadow: var(--shadow-md);
+    }
+    .esprit-badge .n { display: block; font-family: var(--display); font-size: 2rem; letter-spacing: .05em; line-height: 1; }
+    .esprit-badge .t { font-size: .6rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; opacity: .8; }
+
+    .esprit-content p { color: var(--gris-cl); line-height: 1.84; margin-bottom: 1.2rem; }
+
+    .esprit-values {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: .8rem; margin: 2rem 0 2.4rem;
+    }
+    .ev {
+      display: flex; align-items: flex-start; gap: .65rem;
+      padding: .85rem .95rem;
+      background: var(--vert-xs);
+      border-left: 2px solid var(--vert);
+      border-radius: var(--radius);
+    }
+    .ev-icon { font-size: 1.05rem; flex-shrink: 0; margin-top: .06rem; }
+    .ev-text { font-size: .81rem; font-weight: 500; color: var(--creme); line-height: 1.45; }
+
+    /* ── LA CARTE ── */
+    .carte { background: var(--dark); }
+    .carte-header { text-align: center; max-width: 600px; margin: 0 auto 3rem; }
+    .carte-header p { color: var(--gris-cl); margin-top: .9rem; font-size: .93rem; line-height: 1.7; }
+
+    .carte-tabs {
+      display: flex; justify-content: center;
+      gap: .45rem; flex-wrap: wrap; margin-bottom: 2.5rem;
+    }
+    .carte-tab {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.07);
+      color: var(--gris-cl);
+      padding: .52rem 1.25rem; border-radius: 50px;
+      font-size: .76rem; font-weight: 500;
+      letter-spacing: .1em; text-transform: uppercase;
+      cursor: pointer; transition: all var(--ease); white-space: nowrap;
+    }
+    .carte-tab:hover { border-color: rgba(83,116,69,.5); color: var(--vert-cl); }
+    .carte-tab.active { background: var(--vert); border-color: var(--vert); color: var(--creme2); }
+
+    .carte-panel { display: none; }
+    .carte-panel.active { display: block; animation: fadePanel .28s ease; }
+    @keyframes fadePanel { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+    .carte-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+      gap: 1.1rem;
+    }
+    .carte-item {
+      background: rgba(255,255,255,.035);
+      border: 1px solid rgba(255,255,255,.055);
+      border-radius: var(--radius-lg);
+      padding: 1.35rem 1.45rem;
+      transition: all var(--ease);
+    }
+    .carte-item:hover {
+      background: var(--vert-xs);
+      border-color: rgba(83,116,69,.3);
+      transform: translateY(-3px);
+    }
+    .carte-item-icon { font-size: 1.5rem; margin-bottom: .5rem; }
+    .carte-item-name {
+      font-family: var(--serif);
+      font-size: 1.1rem; font-weight: 600;
+      color: var(--blanc); margin-bottom: .3rem;
+    }
+    .carte-item-desc { font-size: .81rem; color: var(--gris-cl); line-height: 1.62; }
+    .carte-item-tag {
+      display: inline-block; margin-top: .7rem;
+      background: rgba(61,92,50,.2); color: var(--vert-cl);
+      font-size: .65rem; font-weight: 600; letter-spacing: .12em;
+      text-transform: uppercase; padding: .2rem .6rem;
+      border-radius: 50px; border: 1px solid rgba(83,116,69,.25);
+    }
+    .carte-note {
+      text-align: center; margin-top: 2.2rem;
+      color: var(--gris); font-size: .82rem; font-style: italic;
+    }
+
+    /* ── AMBIANCE ── */
+    .ambiance { background: var(--sombre2); }
+    .ambiance-header { text-align: center; max-width: 560px; margin: 0 auto 3.5rem; }
+    .ambiance-header p { color: var(--gris-cl); margin-top: .9rem; font-size: .93rem; line-height: 1.72; }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 1.2rem;
+      margin-bottom: 3rem;
+      align-items: start;
+    }
+    .photo-main {
+      grid-row: span 2;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: var(--sombre2);
+    }
+    .photo-main img, .photo-side img {
+      width: 100%; height: auto;
+      object-fit: contain;
+      border-radius: var(--radius-lg);
+      transition: transform .6s ease;
+      display: block;
+    }
+    .photo-side { border-radius: var(--radius-lg); overflow: hidden; background: var(--sombre2); }
+    .photo-main:hover img, .photo-side:hover img { transform: scale(1.04); }
+
+    .ambiance-texte {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 4rem; align-items: start;
+    }
+    .ambiance-col h3 {
+      font-family: var(--serif);
+      font-size: 1.5rem; font-weight: 600;
+      color: var(--blanc); margin-bottom: .8rem;
+    }
+    .ambiance-col p { color: var(--gris-cl); font-size: .9rem; line-height: 1.8; }
+    .ambiance-tags {
+      display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.2rem;
+    }
+    .atag {
+      background: var(--vert-xs);
+      border: 1px solid rgba(83,116,69,.25);
+      color: var(--vert-cl);
+      font-size: .72rem; font-weight: 500;
+      letter-spacing: .08em; padding: .3rem .8rem;
+      border-radius: 50px;
+    }
+
+    /* ── INFOS & HORAIRES ── */
+    .infos { background: var(--sombre); }
+    .infos-header { text-align: center; margin-bottom: 3.5rem; }
+
+    .infos-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 4.5rem; align-items: start;
+    }
+
+    .hours-table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; }
+    .hours-table tr { border-bottom: 1px solid rgba(255,255,255,.065); }
+    .hours-table tr:last-child { border-bottom: none; }
+    .hours-table td { padding: .82rem 0; font-size: .9rem; }
+    .hours-table .day {
+      font-family: var(--serif); font-weight: 600;
+      font-size: .95rem; width: 36%;
+      color: var(--blanc); letter-spacing: .02em;
+    }
+    .hours-table .time { color: var(--gris-cl); }
+    .hours-table .closed { color: var(--gris); font-style: italic; font-weight: 400; }
+    .hours-table tr.today .day,
+    .hours-table tr.today .time { color: var(--or-cl); font-weight: 700; }
+    .weekend-note { font-size: .77rem; color: var(--or); }
+
+    .contact-cards { display: flex; flex-direction: column; gap: .75rem; margin-bottom: 1.5rem; }
+    .contact-card {
+      display: flex; align-items: center; gap: .95rem;
+      padding: .95rem 1.15rem;
+      background: rgba(255,255,255,.035);
+      border: 1px solid rgba(255,255,255,.055);
+      border-radius: var(--radius);
+      transition: all var(--ease);
+    }
+    .contact-card:hover { background: var(--vert-xs); border-color: rgba(83,116,69,.3); }
+    .cc-icon {
+      width: 42px; height: 42px;
+      background: var(--vert-dk);
+      border: 1px solid rgba(83,116,69,.3);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.05rem; flex-shrink: 0;
+    }
+    .cc-label {
+      font-size: .66rem; font-weight: 600;
+      letter-spacing: .15em; text-transform: uppercase;
+      color: var(--gris); display: block; margin-bottom: .1rem;
+    }
+    .cc-value { font-size: .93rem; font-weight: 500; color: var(--blanc); }
+    .cc-value + .cc-value { margin-top: .2rem; }
+    .cc-value a { display: inline-block; }
+    .cc-value a:hover { color: var(--or-cl); }
+
+    .social-links { display: flex; gap: .75rem; }
+    .social-link {
+      display: flex; align-items: center; gap: .45rem;
+      padding: .55rem 1.05rem;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: var(--radius);
+      font-size: .78rem; font-weight: 500; color: var(--gris-cl);
+      transition: all var(--ease);
+    }
+    .social-link:hover { background: var(--vert-xs); border-color: rgba(83,116,69,.35); color: var(--vert-cl); }
+
+    .map-wrap {
+      border-radius: var(--radius-lg); overflow: hidden;
+      box-shadow: var(--shadow-lg); min-height: 460px;
+    }
+    .map-wrap iframe { width: 100%; height: 460px; border: none; display: block; }
+
+    /* ── AVIS ── */
+    .avis { background: var(--noir); padding: 5.5rem 0; }
+    .avis-header { text-align: center; margin-bottom: 3rem; }
+    .avis-rating {
+      display: flex; align-items: baseline; justify-content: center;
+      gap: .75rem; margin-top: .7rem;
+    }
+    .avis-stars-big { font-size: 1.2rem; }
+    .avis-score {
+      font-family: var(--display); font-size: 2.4rem;
+      letter-spacing: .06em; color: var(--or-cl);
+    }
+    .avis-total { font-size: .82rem; color: var(--gris); }
+
+    .avis-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1.3rem; margin-bottom: 2.5rem;
+    }
+    .avis-card {
+      background: rgba(255,255,255,.035);
+      border: 1px solid rgba(255,255,255,.055);
+      border-radius: var(--radius-lg);
+      padding: 1.6rem; transition: all var(--ease);
+    }
+    .avis-card:hover { background: var(--vert-xs); border-color: rgba(83,116,69,.25); }
+    .avis-card-stars { font-size: .83rem; margin-bottom: .85rem; }
+    .avis-card-text {
+      font-family: var(--serif);
+      font-size: 1rem; font-style: italic;
+      color: rgba(237,232,213,.72);
+      line-height: 1.72; margin-bottom: 1.2rem;
+    }
+    .avis-card-author { display: flex; align-items: center; gap: .7rem; }
+    .avis-avatar {
+      width: 34px; height: 34px; border-radius: 50%;
+      background: var(--vert-dk);
+      border: 1px solid rgba(83,116,69,.35);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--display); font-size: .88rem;
+      color: var(--or-cl); flex-shrink: 0;
+    }
+    .avis-name { font-size: .83rem; font-weight: 600; color: var(--blanc); }
+    .avis-date { font-size: .72rem; color: var(--gris); }
+    .avis-cta { text-align: center; }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: #050705;
+      color: rgba(237,232,213,.4);
+      padding: 4rem 0 1.5rem;
+      border-top: 1px solid rgba(61,92,50,.2);
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr;
+      gap: 4rem; padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(255,255,255,.055);
+      margin-bottom: 1.5rem;
+    }
+    .footer-brand .fn {
+      font-family: var(--display);
+      font-size: 1.8rem; letter-spacing: .1em;
+      color: var(--or-cl); display: block; margin-bottom: .1rem;
+    }
+    .footer-brand .fs {
+      font-size: .58rem; letter-spacing: .22em; text-transform: uppercase;
+      color: var(--gris); display: block; margin-bottom: 1rem;
+    }
+    .footer-brand p { font-size: .82rem; line-height: 1.74; max-width: 290px; }
+    .footer-brand .alcool {
+      display: block; margin-top: 1.2rem;
+      font-size: .7rem; color: var(--gris); font-style: italic;
+      border-top: 1px solid rgba(255,255,255,.055);
+      padding-top: .9rem;
+    }
+    .footer-col-title {
+      font-size: .65rem; font-weight: 700;
+      letter-spacing: .22em; text-transform: uppercase;
+      color: var(--vert-cl); margin-bottom: 1.1rem;
+    }
+    .footer-list { display: flex; flex-direction: column; gap: .55rem; }
+    .footer-list li { font-size: .82rem; }
+    .footer-list a:hover { color: var(--blanc); }
+    .footer-list .hi { color: var(--or-cl); font-weight: 600; }
+    .footer-bottom {
+      display: flex; align-items: center;
+      justify-content: space-between; gap: 1rem;
+      flex-wrap: wrap; font-size: .71rem;
+    }
+    .footer-bottom a { margin-left: 1.5rem; }
+    .footer-bottom a:hover { color: var(--blanc); }
+
+    /* ── FLOATING CTA ── */
+    .float-cta {
+      position: fixed; bottom: 1.5rem; right: 1.5rem;
+      z-index: 900; display: flex; flex-direction: column; gap: .65rem;
+      opacity: 0; transform: translateY(14px);
+      transition: all var(--ease); pointer-events: none;
+    }
+    .float-cta.show { opacity: 1; transform: none; pointer-events: auto; }
+    .float-btn {
+      display: flex; align-items: center; gap: .5rem;
+      padding: .72rem 1.25rem; border-radius: 50px;
+      font-size: .8rem; font-weight: 600; letter-spacing: .06em;
+      box-shadow: 0 4px 20px rgba(0,0,0,.55);
+      transition: all var(--ease); white-space: nowrap;
+    }
+    .float-btn:hover { transform: translateY(-2px); }
+    .float-call { background: var(--vert); color: var(--creme2); }
+    .float-call:hover { background: var(--vert-cl); }
+    .float-map  { background: var(--blanc); color: var(--noir); }
+
+    /* ── ANIMATIONS ── */
+    .fade-up, .fade-left, .fade-right {
+      opacity: 0; transition: opacity .7s ease, transform .7s ease;
+    }
+    .fade-up    { transform: translateY(28px); }
+    .fade-left  { transform: translateX(-32px); }
+    .fade-right { transform: translateX(32px); }
+    .fade-up.in, .fade-left.in, .fade-right.in { opacity: 1; transform: none; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .avis-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      section { padding: 4rem 0; }
+      .nav-links {
+        display: none; position: fixed; inset: 0;
+        background: rgba(5,7,5,.98);
+        flex-direction: column; justify-content: center;
+        align-items: center; gap: 2.4rem; z-index: 1000;
+      }
+      .nav-links.open { display: flex; }
+      .nav-links.open a { font-size: 1.4rem; }
+      .nav-burger { display: flex; }
+      .esprit-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .esprit-img-secondary, .esprit-badge { display: none; }
+      .esprit-values { grid-template-columns: 1fr; }
+      .photo-grid { grid-template-columns: 1fr; }
+      .photo-main { grid-row: span 1; }
+      .ambiance-texte { grid-template-columns: 1fr; gap: 2rem; }
+      .infos-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .map-wrap, .map-wrap iframe { height: 300px; min-height: 300px; }
+      .avis-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+      .footer-bottom a { margin-left: 0; }
+      .float-cta { bottom: 1rem; right: 1rem; }
+      .float-btn-label { display: none; }
+      .float-btn { padding: .88rem; border-radius: 50%; }
+      .hero-stats { gap: 1.5rem; }
+      .hero-ctas { flex-direction: column; }
+      .quote-strip-inner { flex-direction: column; gap: 1rem; text-align: center; }
+    }
+    @media (max-width: 480px) {
+      .carte-tab { font-size: .7rem; padding: .45rem .85rem; }
+      .social-links { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── COOKIE BANNER ── -->
+<div class="cookie-banner" id="cookieBanner">
+  <p>Ce site utilise des cookies pour améliorer votre expérience. <a href="#">En savoir plus</a></p>
+  <div class="cookie-btns">
+    <button class="cookie-accept" onclick="document.getElementById('cookieBanner').style.display='none'">Accepter</button>
+    <button class="cookie-decline" onclick="document.getElementById('cookieBanner').style.display='none'">Refuser</button>
+  </div>
+</div>
+
+<!-- ── FLOATING CTA ── -->
+<div class="float-cta" id="floatCta">
+  <a href="tel:+33749558450" class="float-btn float-call" aria-label="Appeler le Bar à Bro">
+    <span>📞</span><span class="float-btn-label">Appeler</span>
+  </a>
+  <a href="https://maps.google.com/?q=68+Avenue+%C3%89douard+Millaud,+69290+Craponne" target="_blank" rel="noopener noreferrer" class="float-btn float-map" aria-label="Itinéraire">
+    <span>📍</span><span class="float-btn-label">Itinéraire</span>
+  </a>
+</div>
+
+<!-- ── NAVIGATION ── -->
+<nav class="nav" id="nav">
+  <div class="container">
+    <a href="#accueil" class="nav-logo">
+      <span class="nm">BAR À BRO</span>
+      <span class="sub">Craponne · Depuis 2021</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#esprit">L'Esprit</a></li>
+      <li><a href="#carte">La Carte</a></li>
+      <li><a href="#ambiance">Ambiance</a></li>
+      <li><a href="#infos">Infos</a></li>
+      <li><a href="tel:+33749558450" class="nav-call">📞&nbsp;07&nbsp;49&nbsp;55&nbsp;84&nbsp;50</a></li>
+    </ul>
+    <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+
+<!-- ══════════════════════ HERO ══════════════════════ -->
+<section class="hero" id="accueil">
+  <div class="hero-bg" role="img" aria-label="Bar à Bro, Craponne"></div>
+  <div class="hero-tint" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-pill">🌿 Bar cosy · Craponne (69290)</div>
+
+      <h1 class="hero-title">
+        BAR
+        <span class="line2">À BRO</span>
+      </h1>
+
+      <p class="hero-tagline">
+        Venez comme vous êtes.<br>Restez aussi longtemps que vous voulez.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="tel:+33749558450" class="btn btn-vert">📞 Appeler</a>
+        <a href="https://maps.google.com/?q=68+Avenue+%C3%89douard+Millaud,+69290+Craponne" target="_blank" rel="noopener noreferrer" class="btn btn-outline">📍 Itinéraire</a>
+        <a href="#carte" class="btn btn-or">🍺 La carte</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <strong>4,8<small style="font-size:.9rem;font-family:var(--sans);font-weight:300">/5</small></strong>
+          <span>★ Avis Google</span>
+        </div>
+        <div class="hero-stat"><strong>172</strong><span>Avis clients</span></div>
+        <div class="hero-stat"><strong>2021</strong><span>Ouvert depuis</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="hero-scroll-line"></div>
+    <span>Découvrir</span>
+  </div>
+</section>
+
+
+<!-- ── QUOTE STRIP ── -->
+<div class="quote-strip">
+  <div class="container">
+    <div class="quote-strip-inner">
+      <div class="quote-item">« Un lieu où on se sent bien, où on revient »</div>
+      <div class="quote-item">« Des planches généreuses avec des produits de qualité »</div>
+      <div class="quote-item">« Le gérant est adorable, ambiance top dès que tu passes la porte »</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════ L'ESPRIT ══════════════════════ -->
+<section class="esprit" id="esprit">
+  <div class="container">
+    <div class="esprit-grid">
+
+      <div class="esprit-img-wrap fade-left">
+        <img
+          src="bro-photo-7.png"
+          alt="Le comptoir du Bar à Bro, Craponne"
+          class="esprit-img-main" loading="lazy"
+        >
+        <img
+          src="cadre-haute.png"
+          alt="Décor du Bar à Bro — cadre mural"
+          class="esprit-img-secondary" loading="lazy"
+        >
+        <div class="esprit-badge">
+          <span class="n">+3</span>
+          <span class="t">Ans de<br>bonne humeur</span>
+        </div>
+      </div>
+
+      <div class="esprit-content fade-right">
+        <span class="label">L'Esprit Bro</span>
+        <h2 class="title">Un endroit où<br>on se <em>sent bien</em></h2>
+
+        <div class="divider"><span>🌿</span></div>
+
+        <p>Créé en 2021 par <strong>Hugo Forly</strong>, le Bar à Bro est né d'une idée simple :
+        offrir à Craponne un endroit chaleureux, sans prise de tête, où l'on peut souffler
+        après le boulot ou passer une belle soirée tranquille.</p>
+
+        <p>Ici l'ambiance est posée, la bière est soigneusement choisie, les planches
+        de charcuterie et fromages sont généreuses et savoureuses. On vient pour le plaisir
+        d'un bon verre dans un cadre qui fait du bien.</p>
+
+        <p>After-work, soirée en duo ou entre amis, rendez-vous de quartier —
+        le Bar à Bro est là, ouvert du mardi au samedi à partir de 17h.</p>
+
+        <div class="esprit-values">
+          <div class="ev"><span class="ev-icon">🍺</span><span class="ev-text">Bières pression &amp; bouteilles sélectionnées</span></div>
+          <div class="ev"><span class="ev-icon">🍷</span><span class="ev-text">Vins de qualité au verre ou à la bouteille</span></div>
+          <div class="ev"><span class="ev-icon">🧀</span><span class="ev-text">Planches généreuses, produits de qualité</span></div>
+          <div class="ev"><span class="ev-icon">🌿</span><span class="ev-text">Ambiance cosy, décontractée, sans chichis</span></div>
+        </div>
+
+        <a href="tel:+33749558450" class="btn btn-vert">📞 Nous appeler</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════ LA CARTE ══════════════════════ -->
+<section class="carte" id="carte">
+  <div class="container">
+
+    <div class="carte-header fade-up">
+      <span class="label">La Carte</span>
+      <h2 class="title">À boire, à <em>partager</em></h2>
+      <p>Une sélection de bières, vins, cocktails et planches généreuses.
+      La carte évolue régulièrement selon les saisons et les arrivages.</p>
+    </div>
+
+    <div class="carte-tabs" role="tablist">
+      <button class="carte-tab active" data-panel="bieres">🍺 Bières</button>
+      <button class="carte-tab" data-panel="vins">🍷 Vins</button>
+      <button class="carte-tab" data-panel="cocktails">🍹 Cocktails &amp; Softs</button>
+      <button class="carte-tab" data-panel="planches">🧀 Planches</button>
+      <button class="carte-tab" data-panel="snacking">🍟 Snacking</button>
+    </div>
+
+    <div class="carte-panel active" id="panel-bieres">
+      <div class="carte-grid">
+        <div class="carte-item"><div class="carte-item-icon">🍺</div><div class="carte-item-name">La Pression du Moment</div><p class="carte-item-desc">Blonde, rousse ou blanche selon l'arrivage — fraîche, en demi ou en pinte.</p><span class="carte-item-tag">★ Incontournable</span></div>
+        <div class="carte-item"><div class="carte-item-icon">🌾</div><div class="carte-item-name">Bières Artisanales</div><p class="carte-item-desc">Brasseries artisanales locales et régionales, renouvelées au fil des saisons.</p><span class="carte-item-tag">Bouteille</span></div>
+        <div class="carte-item"><div class="carte-item-icon">🌍</div><div class="carte-item-name">Bières du Monde</div><p class="carte-item-desc">IPA, Stout, Triple, Blanche, Fruitée… Pour les curieux et les amateurs.</p><span class="carte-item-tag">Bouteille</span></div>
+        <div class="carte-item"><div class="carte-item-icon">🍋</div><div class="carte-item-name">Radler &amp; Sans Alcool</div><p class="carte-item-desc">Radler citron, bières sans alcool — pour trinquer sans restriction.</p><span class="carte-item-tag">Option douce</span></div>
+      </div>
+    </div>
+
+    <div class="carte-panel" id="panel-vins">
+      <div class="carte-grid">
+        <div class="carte-item"><div class="carte-item-icon">🍷</div><div class="carte-item-name">Rouge au Verre</div><p class="carte-item-desc">Rouges charnus et fruités, idéaux avec une planche ou en apéritif.</p><span class="carte-item-tag">Au verre</span></div>
+        <div class="carte-item"><div class="carte-item-icon">🥂</div><div class="carte-item-name">Blanc &amp; Rosé</div><p class="carte-item-desc">Blancs secs ou fruités, rosés frais — parfaits pour l'after-work.</p><span class="carte-item-tag">Au verre</span></div>
+        <div class="carte-item"><div class="carte-item-icon">🍾</div><div class="carte-item-name">Bouteilles</div><p class="carte-item-desc">Pour partager à plusieurs — sélection rouge, blanc, rosé.</p><span class="carte-item-tag">Bouteille</span></div>
+        <div class="carte-item"><div class="carte-item-icon">✨</div><div class="carte-item-name">Pétillants &amp; Champagne</div><p class="carte-item-desc">Prosecco, crémant, champagne — pour les soirs qui le méritent.</p><span class="carte-item-tag">Occasion spéciale</span></div>
+      </div>
+    </div>
+
+    <div class="carte-panel" id="panel-cocktails">
+      <div class="carte-grid">
+        <div class="carte-item"><div class="carte-item-icon">🍹</div><div class="carte-item-name">Cocktails Classiques</div><p class="carte-item-desc">Mojito, Spritz, Moscow Mule, Gin Tonic… Les indémodables, bien faits.</p><span class="carte-item-tag">Avec alcool</span></div>
+        <div class="carte-item"><div class="carte-item-icon">🌿</div><div class="carte-item-name">Mocktails &amp; Softs</div><p class="carte-item-desc">Alternatives sans alcool fraîches et savoureuses.</p><span class="carte-item-tag">Sans alcool</span></div>
+        <div class="carte-item"><div class="carte-item-icon">🥃</div><div class="carte-item-name">Spiritueux au Verre</div><p class="carte-item-desc">Rhum, Whisky, Gin, Vodka — à apprécier seul ou sur glace.</p><span class="carte-item-tag">Au verre</span></div>
+        <div class="carte-item"><div class="carte-item-icon">☕</div><div class="carte-item-name">Cafés &amp; Boissons Chaudes</div><p class="carte-item-desc">Café, expresso, thé — pour finir en douceur.</p><span class="carte-item-tag">Chaud</span></div>
+      </div>
+    </div>
+
+    <div class="carte-panel" id="panel-planches">
+      <div class="carte-grid">
+        <div class="carte-item"><div class="carte-item-icon">🥩</div><div class="carte-item-name">Planche Charcuterie</div><p class="carte-item-desc">Saucisson, jambon, coppa, rillettes… Produits de qualité, généreux, à partager.</p><span class="carte-item-tag">★ Signature</span></div>
+        <div class="carte-item"><div class="carte-item-icon">🧀</div><div class="carte-item-name">Planche Fromages</div><p class="carte-item-desc">Fromages affinés avec pain grillé, noix et condiments.</p><span class="carte-item-tag">À partager</span></div>
+        <div class="carte-item"><div class="carte-item-icon">🎉</div><div class="carte-item-name">Planche Mixte</div><p class="carte-item-desc">Charcuterie et fromages réunis sur une grande planche généreuse.</p><span class="carte-item-tag">Pour 3–4 pers.</span></div>
+        <div class="carte-item"><div class="carte-item-icon">🍞</div><div class="carte-item-name">Pain &amp; Accompagnements</div><p class="carte-item-desc">Pain grillé, beurre, condiments — pour accompagner comme il se doit.</p><span class="carte-item-tag">Accompagnement</span></div>
+      </div>
+    </div>
+
+    <div class="carte-panel" id="panel-snacking">
+      <div class="carte-grid">
+        <div class="carte-item"><div class="carte-item-icon">🥖</div><div class="carte-item-name">Bruschettas</div><p class="carte-item-desc">Tartines croustillantes garnies selon les envies du moment.</p><span class="carte-item-tag">À partager</span></div>
+        <div class="carte-item"><div class="carte-item-icon">🧅</div><div class="carte-item-name">Tapas du Moment</div><p class="carte-item-desc">Olives marinées, chorizo, anchois… Selon l'humeur du bar.</p><span class="carte-item-tag">Selon arrivage</span></div>
+        <div class="carte-item"><div class="carte-item-icon">🍟</div><div class="carte-item-name">Frites &amp; Classiques</div><p class="carte-item-desc">Simples, efficaces, parfaits pour accompagner votre verre.</p><span class="carte-item-tag">Classique</span></div>
+        <div class="carte-item"><div class="carte-item-icon">🌮</div><div class="carte-item-name">Snacks à Partager</div><p class="carte-item-desc">Chips artisanales, petites bouchées, encas du soir.</p><span class="carte-item-tag">Snack</span></div>
+      </div>
+    </div>
+
+    <p class="carte-note fade-up">🔄 Carte indicative — évolue selon les saisons et arrivages.</p>
+  </div>
+</section>
+
+
+<!-- ══════════════════════ AMBIANCE ══════════════════════ -->
+<section class="ambiance" id="ambiance">
+  <div class="container">
+
+    <div class="ambiance-header fade-up">
+      <span class="label">L'Ambiance</span>
+      <h2 class="title">Calme, <em>chaleureux</em>,<br>à deux pas de chez vous</h2>
+      <p>Ni trop fort, ni trop agité. Un endroit où l'on discute vraiment,
+      où le temps passe sans qu'on s'en aperçoive.</p>
+    </div>
+
+    <!-- ⚡ Grille photos — remplacez chaque src par vos vraies photos -->
+    <div class="photo-grid fade-up">
+      <div class="photo-main">
+        <img src="bro-photo-6.png" alt="Bar à Bro — la salle" loading="lazy">
+      </div>
+      <div class="photo-side">
+        <img src="bro-photo-2.png" alt="Bar à Bro — sélection de vins" loading="lazy">
+      </div>
+      <div class="photo-side">
+        <img src="bro-photo-9.png" alt="Bar à Bro — planche charcuterie" loading="lazy">
+      </div>
+    </div>
+
+    <div class="ambiance-texte">
+      <div class="ambiance-col fade-left">
+        <h3>Un bar de quartier, dans le bon sens du terme</h3>
+        <p>Le Bar à Bro, c'est un endroit où les habitués ont leur tabouret,
+        où les nouveaux venus se sentent vite à l'aise. Hugo connaît ses clients
+        par leur prénom et sait ce qu'ils commandent. C'est ça, l'esprit Bro.</p>
+        <div class="ambiance-tags">
+          <span class="atag">After-work</span>
+          <span class="atag">Soirée tranquille</span>
+          <span class="atag">Entre amis</span>
+          <span class="atag">En duo</span>
+          <span class="atag">Seul au comptoir</span>
+        </div>
+      </div>
+      <div class="ambiance-col fade-right">
+        <h3>Des produits qui font la différence</h3>
+        <p>Les planches, c'est la fierté de la maison. Charcuteries et fromages
+        de qualité, sélectionnés avec soin — ça se voit et ça se goûte. À déguster
+        posément, avec un bon verre, en bonne compagnie.</p>
+        <div class="ambiance-tags">
+          <span class="atag">Bières artisanales</span>
+          <span class="atag">Vins au verre</span>
+          <span class="atag">Planches généreuses</span>
+          <span class="atag">Produits de qualité</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════ INFOS & HORAIRES ══════════════════════ -->
+<section class="infos" id="infos">
+  <div class="container">
+
+    <div class="infos-header fade-up">
+      <span class="label">Infos &amp; Horaires</span>
+      <h2 class="title">On vous <em>attend</em></h2>
+    </div>
+
+    <div class="infos-grid">
+      <div class="fade-left">
+        <table class="hours-table">
+          <tbody>
+            <tr id="row-lundi"><td class="day closed">Lundi</td><td class="time closed">Fermé</td></tr>
+            <tr id="row-mardi"><td class="day">Mardi</td><td class="time">À partir de 17h00</td></tr>
+            <tr id="row-mercredi"><td class="day">Mercredi</td><td class="time">À partir de 17h00</td></tr>
+            <tr id="row-jeudi"><td class="day">Jeudi</td><td class="time">À partir de 17h00</td></tr>
+            <tr id="row-vendredi"><td class="day">Vendredi</td><td class="time">À partir de 17h00 <span class="weekend-note">— jusqu'à 1h</span></td></tr>
+            <tr id="row-samedi"><td class="day">Samedi</td><td class="time">À partir de 17h00 <span class="weekend-note">— jusqu'à 1h</span></td></tr>
+            <tr id="row-dimanche"><td class="day closed">Dimanche</td><td class="time closed">Fermé</td></tr>
+          </tbody>
+        </table>
+
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="cc-icon">📞</div>
+            <div>
+              <span class="cc-label">Contact</span>
+              <div class="cc-value"><a href="tel:+33749558450">07 49 55 84 50</a></div>
+              <div class="cc-value"><a href="mailto:hugo@barabro.fr">hugo@barabro.fr</a></div>
+              <div class="cc-value">68 Avenue Édouard Millaud, 69290 Craponne</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/share/1MQVqD7P4N/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#1877F2" style="vertical-align:middle;flex-shrink:0"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+          </a>
+          <a href="https://www.instagram.com/barabrocraponne?igsh=Mjc1NnNqNWhkbHlu" target="_blank" rel="noopener noreferrer" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" style="vertical-align:middle;flex-shrink:0"><defs><radialGradient id="ig-social" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><path fill="url(#ig-social)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+
+      <div class="map-wrap fade-right">
+        <iframe
+          src="https://maps.google.com/maps?q=68+Avenue+%C3%89douard+Millaud+69290+Craponne&t=&z=16&ie=UTF8&iwloc=&output=embed"
+          title="Carte — Bar à Bro, Craponne"
+          loading="lazy" allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════ AVIS ══════════════════════ -->
+<section class="avis" id="avis">
+  <div class="container">
+
+    <div class="avis-header fade-up">
+      <span class="label">Avis Clients</span>
+      <h2 class="title" style="font-size:clamp(1.9rem,3.5vw,2.8rem)">Ce que disent<br>nos <em>clients</em></h2>
+      <div class="avis-rating">
+        <span class="avis-stars-big">⭐⭐⭐⭐⭐</span>
+        <span class="avis-score">4,8</span>
+        <span style="font-family:var(--serif);font-size:1.05rem;color:var(--gris-cl)">/5</span>
+        <span class="avis-total">— 172 avis Google</span>
+      </div>
+    </div>
+
+    <div class="avis-grid">
+      <article class="avis-card fade-up">
+        <div class="avis-card-stars">⭐⭐⭐⭐⭐</div>
+        <p class="avis-card-text">« Le Bar à Bro c'est clairement the place to be ! Une ambiance au top dès que tu passes la porte, un accueil chaleureux qui te met direct à l'aise. Un lieu où on se sent bien, où on revient… et où l'on reste plus longtemps que prévu. »</p>
+        <div class="avis-card-author">
+          <div class="avis-avatar">A</div>
+          <div><div class="avis-name">Assma Benlagha</div><div class="avis-date">Local Guide · 121 avis</div></div>
+        </div>
+      </article>
+      <article class="avis-card fade-up">
+        <div class="avis-card-stars">⭐⭐⭐⭐⭐</div>
+        <p class="avis-card-text">« Un bar très convivial ! Bières, vins, planches de fromage, charcuterie… Et si vous êtes seul le comptoir est un bon choix pour discuter avec le propriétaire Hugo. Efficace même en période de rush. Je recommande à 1000000000% »</p>
+        <div class="avis-card-author">
+          <div class="avis-avatar">C</div>
+          <div><div class="avis-name">Clara Torrent</div><div class="avis-date">Local Guide · 113 avis</div></div>
+        </div>
+      </article>
+      <article class="avis-card fade-up">
+        <div class="avis-card-stars">⭐⭐⭐⭐⭐</div>
+        <p class="avis-card-text">« Le lieu parfait pour décompresser après une journée de travail. Des planches à composer soi-même, généreuses, savoureuses et à des prix très abordables. Le gérant est adorable et bienveillant. Une adresse à ne pas manquer sur Craponne. »</p>
+        <div class="avis-card-author">
+          <div class="avis-avatar">L</div>
+          <div><div class="avis-name">Laurine Michaelian</div><div class="avis-date">7 avis Google</div></div>
+        </div>
+      </article>
+      <article class="avis-card fade-up">
+        <div class="avis-card-stars">⭐⭐⭐⭐⭐</div>
+        <p class="avis-card-text">« Petite découverte hier soir ! Que ça aille ou pas, arrête-toi au Bar à Bro et après ça ira mieux ! Des planches bien copieuses, des bières pression sélectionnées, un sourire et une gentillesse qui se transmet dans tout le lieu. Merci Hugo ! »</p>
+        <div class="avis-card-author">
+          <div class="avis-avatar">F</div>
+          <div><div class="avis-name">Flow S.</div><div class="avis-date">Local Guide · 173 avis</div></div>
+        </div>
+      </article>
+      <article class="avis-card fade-up">
+        <div class="avis-card-stars">⭐⭐⭐⭐⭐</div>
+        <p class="avis-card-text">« Bar à taille humaine avec une ambiance incroyable et ultra conviviale ! Les boissons sont simples et bonnes, les planches généreuses et à composer soi-même. Mention spéciale pour le patron Hugo qui nous met à l'aise dès le pas de la porte. »</p>
+        <div class="avis-card-author">
+          <div class="avis-avatar">J</div>
+          <div><div class="avis-name">Julie Munoz</div><div class="avis-date">4 avis Google</div></div>
+        </div>
+      </article>
+      <article class="avis-card fade-up">
+        <div class="avis-card-stars">⭐⭐⭐⭐⭐</div>
+        <p class="avis-card-text">« Super endroit pour se poser et passer un bon moment entre amis. Très très bonne charcuterie, bon fromage, petite musique d'ambiance… quoi de mieux. En tout cas je recommande pour se détendre entre amis +++ »</p>
+        <div class="avis-card-author">
+          <div class="avis-avatar">S</div>
+          <div><div class="avis-name">Spyro "Le dragon violet"</div><div class="avis-date">Local Guide · 521 avis</div></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="avis-cta fade-up">
+      <a href="https://maps.google.com/?q=Bar+%C3%A0+Bro+Craponne" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+        🌟 Voir les 172 avis sur Google
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════ FOOTER ══════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="fn">BAR À BRO</span>
+        <span class="fs">Bar à Bières &amp; Vins — Licence III — Craponne</span>
+        <p>68 Avenue Édouard Millaud<br>69290 Craponne<br>Gérant : Hugo Forly</p>
+        <span class="alcool">⚠️ L'abus d'alcool est dangereux pour la santé. À consommer avec modération. La vente d'alcool aux mineurs est interdite par la loi.</span>
+      </div>
+      <div>
+        <p class="footer-col-title">Horaires</p>
+        <ul class="footer-list">
+          <li>Lundi : Fermé</li>
+          <li>Mar → Jeu : à partir de 17h</li>
+          <li class="hi">Ven → Sam : 17h (jusqu'à 1h)</li>
+          <li>Dimanche : Fermé</li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <ul class="footer-list">
+          <li><a href="tel:+33749558450" class="hi">📞 07 49 55 84 50</a></li>
+          <li><a href="mailto:hugo@barabro.fr">✉ hugo@barabro.fr</a></li>
+          <li style="margin-top:.6rem"><a href="https://www.facebook.com/share/1MQVqD7P4N/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.4rem"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook</a></li>
+          <li><a href="https://www.instagram.com/barabrocraponne?igsh=Mjc1NnNqNWhkbHlu" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.4rem"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><defs><radialGradient id="ig-footer" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><path fill="url(#ig-footer)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg> Instagram</a></li>
+          <li style="margin-top:.6rem"><a href="https://maps.google.com/?q=68+Avenue+%C3%89douard+Millaud+69290+Craponne" target="_blank" rel="noopener noreferrer">📍 Voir l'itinéraire</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Bar à Bro — Hugo Forly — Tous droits réservés</span>
+      <div>
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Gestion des cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  const nav = document.getElementById('nav');
+  const floatCta = document.getElementById('floatCta');
+  window.addEventListener('scroll', () => {
+    const past = window.scrollY > 80;
+    nav.classList.toggle('scrolled', past);
+    floatCta.classList.toggle('show', past);
+  }, { passive: true });
+
+  const burger = document.getElementById('navBurger');
+  const navLinks = document.getElementById('navLinks');
+  function toggleMenu(open) {
+    navLinks.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', String(open));
+    const spans = burger.querySelectorAll('span');
+    if (open) {
+      spans[0].style.cssText = 'transform:rotate(45deg) translate(5px,5px)';
+      spans[1].style.opacity = '0';
+      spans[2].style.cssText = 'transform:rotate(-45deg) translate(5px,-5px)';
+    } else {
+      spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+    }
+  }
+  burger.addEventListener('click', () => toggleMenu(!navLinks.classList.contains('open')));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggleMenu(false)));
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); } });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.fade-up, .fade-left, .fade-right').forEach((el, i) => {
+    el.style.transitionDelay = (i % 5) * 0.08 + 's';
+    observer.observe(el);
+  });
+
+  const dayMap = { 0:'dimanche', 1:'lundi', 2:'mardi', 3:'mercredi', 4:'jeudi', 5:'vendredi', 6:'samedi' };
+  const row = document.getElementById('row-' + dayMap[new Date().getDay()]);
+  if (row) row.classList.add('today');
+
+  document.querySelectorAll('.carte-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.carte-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.carte-panel').forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById('panel-' + tab.dataset.panel).classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
